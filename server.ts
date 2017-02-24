@@ -1,4 +1,4 @@
 console.log('Hello world');
-function juro()  { 
+function juro(){ 
     alert(1);
 }

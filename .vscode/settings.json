@@ -8,5 +8,6 @@
         "**/*.map": { "when": "$(basename)" },
         "**/*.js": { "when": "$(basename).ts" }
     },
-    "tslint.enable": true
+    "tslint.enable": true,
+    "sasslint.enable": true
 }

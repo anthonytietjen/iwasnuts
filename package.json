@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass-lint": "^1.10.2",
+    "tsc": "^1.20150623.0",
+    "tslint": "^4.4.2",
+    "typescript": "^2.2.1"
+  }
 }
