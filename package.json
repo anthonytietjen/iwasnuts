@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tsc": "^1.20150623.0",
     "typescript": "^2.2.1"
   }
 }
