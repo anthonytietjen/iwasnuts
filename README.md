@@ -46,3 +46,7 @@ Recommended Extensions for Visual Studio Code
 1. **.ejs** - For better editor support when modifying .ejs files
 2. **TSLint** - For keeping in line with standard TypeScript coding practices.
 2. **Sass Lint** - For keeping in line with standard TypeScript coding practices.
+
+Resources
+-----------
+My website: [anthonytietjen.blogspot.com](anthonytietjen.blogspot.com)
