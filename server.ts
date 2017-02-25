@@ -6,6 +6,8 @@ import * as sessionFileStore from "session-file-store";
 import config = require("./app/config");
 
 const app = express();
+console.log(2);
+
 app.use(express.static('./static'));
 app.set('view engine', 'ejs');
 

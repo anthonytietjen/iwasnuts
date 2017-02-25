@@ -1,4 +1,15 @@
 node_modules/
 sessions/
-server.*.js
+
+# js files since we are using typescript (don't exclude gulpfile.js though)
+server.js
+server.js.map
 app/**/*.js
+app/**/*.js.map
+
+# css files since we are using typescript
+*.css
+*.css.map
+
+# gulp-tsc temporary files
+gulp-tsc-tmp-*

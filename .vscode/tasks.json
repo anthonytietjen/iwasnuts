@@ -1,11 +1,20 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "0.1.0",
-    "command": "./node_modules/tsc/bin/tsc",
-    "isShellCommand": true,
-    "args": ["-w", "-p", "."],
-    "showOutput": "silent",
-    "isBackground": true,
-    "problemMatcher": "$tsc-watch"
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "0.1.0",
+	"tasks": [
+		{
+			"taskName": "watch-ts-and-sass-debug",
+			"command": "gulp",
+			"isBuildCommand": true,
+			"isShellCommand": true,
+			"args": ["watch-ts-and-sass-debug"]
+		},
+		{
+			"taskName": "task-typescript",
+			"command": "gulp",
+			"isShellCommand": true,
+			"args": ["task-typescript"]
+		}
+	]
 }

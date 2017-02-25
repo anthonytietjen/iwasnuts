@@ -1,0 +1,1 @@
+gulp-tsc puts temporary files in the /tmp folder. Refer to gulpfile.js

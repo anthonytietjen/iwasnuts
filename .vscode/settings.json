@@ -4,7 +4,10 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        "**/*.map": { "when": "$(basename)" },
+        "**/*.js": { "when": "$(basename).ts" },
+		".gulp-tsc-tmp-*": true
     },
 	"typescript.tsdk": "./node_modules/typescript/lib",
 	"typescript.referencesCodeLens.enabled": true
