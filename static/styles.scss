@@ -1,20 +1,53 @@
 $body-bg: #fff;
 $nav-link-color: #0000ff;
+$body-text-color: #333;
+$form-container-background: #eee;
+$form-container-border: #ccc;
 
 body {
     background-color: $body-bg;
 	font-family: arial;
-	font-size:14pt;
+	font-size:100%;
+	color: $body-text-color;
+	margin: 0; 
+	padding: 15px 30px;
 }
 
-ul.nav {
-	padding:0;
-	li {
-		display:inline;
-		margin-right: 20px;
+ul {
+	&.nav {
+		padding: 0;
+		li {
+			display: inline;
+			margin-right: 20px;
 
-		a {
-			color: $nav-link-color;
+			a {
+				color: $nav-link-color;
+			}
 		}
 	}
+}
+
+.form-container {
+	background-color: $form-container-background;
+	border: 1px solid $form-container-border;
+	padding: 8px;
+	display: inline-block;
+	margin: auto;
+
+	div {
+		padding: 8px;
+	}
+	input {
+		box-sizing: border-box;
+		display:block;
+		height: 40px;
+		width: 300px;
+		padding: 6px 10px;
+		border:1px solid silver;
+	}
+}
+
+footer {
+	margin-top: 30px;
+	font-size: 75%;
 }
