@@ -1,18 +1,27 @@
-IWASNUTS Is a Web App Starter for Node Using TypeScript and Sass
+IWasNuts
+===========
+**I**s a **W**eb **A**pp **S**tarter for **N**ode **U**sing **T**ypeScript and **S**ass
 
-Prerequisites
+Guide for Advanced Users of Node and VSCode
 -----------
-1. Install NodeJS, Visual Studio Code, and Git.
-2. git clone https://github.com/anthony-tietjen/website-starter-node-typescript-sass-gulp-vscode.git
+1. Install NodeJS and Visual Studio Code
+2. git clone https://github.com/anthony-tietjen/iwasnuts.git
 3. npm install
 4. npm install gulp -g
+5. Open the folder in VSCode.
+6. Configure your settings in /app/config.ts
+7. Place your anlytics scripts in /views/partials/analytics.ejs
 
-Setup
+Guide for Newcomers to Node and VSCode
 -----------
-1. Open the folder in VSCode.
-2. Configure your settings in /app/config.ts
-3. Place your anlytics scripts in /views/partials/analytics.ejs
-
-Keep Going
------------
-1. Install the "ejs" extension for VSCode
+1. Install [NodeJS](http://www.nodejs.org);
+2. Install [Visual Studio Code](http://code.visualstudio.com/)
+3. Install [Git](https://git-scm.com/downloads)
+3. At the command prompt, run: **npm install**
+4. At the command prompt, run: **npm install gulp -g**
+5. Create a new folder to hold your project
+6. In the command prompt, cd into the project folder
+6. In the command prompt, run: **git clone https://github.com/anthony-tietjen/iwasnuts.git**
+5. Open the project folder in VSCode
+6. Configure your settings in /app/config.ts
+7. Place your anlytics scripts in /views/partials/analytics.ejs
