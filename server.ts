@@ -20,7 +20,7 @@ app.use(session({
 	store: new FileStore({
 		path: './sessions'
 	}),
-	name: 'session', 
+	name: 'session',
 	cookie: {
 		maxAge: 6000,
 		expires: false,
@@ -42,4 +42,4 @@ const port = config.CONNECTION_PORT_DEBUG;
 const hostName = config.CONNECTION_HOSTNAME_DEBUG;
 app.listen(port, hostName, () => {
 	console.log(`Listening on ${hostName}:${port}`);
-})
+});
