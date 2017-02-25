@@ -3,7 +3,7 @@ const sass = require("gulp-sass");
 const typescript = require("gulp-tsc");
 
 const sassPaths = ['./static/*.scss']; // Don't include the node_modules folder
-const tsPaths = ['./app/**/*.ts']; // Don't include the node_modules folder
+const tsPaths = ['./server.ts', './app/**/*.ts']; // Don't include the node_modules folder
 
 gulp.task('task-typescript', () => {
 	gulp.src(tsPaths, {base: '.'})
