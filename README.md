@@ -1,9 +1,12 @@
 IWasNuts
 ===========
-**I**s a **W**eb **A**pp **S**tarter for **N**ode **U**sing **T**ypeScript and **S**ass
+...**I**s a **W**eb **A**pp **S**tarter for **N**ode **U**sing **T**ypeScript and **S**ass
 
+```
 This project includes settings specifically set up for Visual Studio Code.
-For example, the ./vscode/settings.json file tells Visual Studio code to hide .js and certain other files from the file list.
+* The ./vscode/settings.json file tells Visual Studio code to hide .js and certain other files from the file list.
+* The ./vscode/tasks.json file tells Visual Studio Code how to launch the gulp tasks for compiling TypeScript and Sass.
+```
 
 Guide for Advanced Users of Node and VSCode
 -----------
