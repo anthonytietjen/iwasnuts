@@ -3,6 +3,7 @@ import * as express from "express";
 import * as session from "express-session";
 import * as sessionFileStore from "session-file-store";
 
+import auth = require("./app/auth");
 import config = require("./app/config");
 
 const app = express();
@@ -28,26 +29,43 @@ app.use(session({
 		secure: "auto", // Uses false on http and true on https connections
 	},
 	resave: true, // https://github.com/expressjs/session#resave
-	saveUninitialized: false, // https://github.com/expressjs/session#saveuninitialized
+	saveUninitialized: true, // https://github.com/expressjs/session#saveuninitialized
 	secret: config.SESSION_SECRET
 }));
 
 // Ability to parse json requests
 app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.urlencoded({extended: true, limit: '50mb'}));
 
 // Routes
 app.get('/', (req, res)=> {
-	res.render('pages/index', {pageTitle: 'Home'});
+	res.render('pages/index', {...getModel(req), pageTitle: 'Home'});
 });
 app.get('/signin', (req, res)=> {
-	res.render('pages/signin', {pageTitle: 'Sign In'});
+	res.render('pages/signin', {...getModel(req), pageTitle: 'Sign In'});
+});
+app.post('/signin', (req, res) => {
+	if(auth.signIn(req)){
+		res.render('pages/index', {...getModel(req), pageTitle: 'Home'});
+	} else {
+		res.render('pages/signin', {...getModel(req), message: 'Invalid credentials'});
+	}
 });
 app.get('/register', (req, res)=> {
-	res.render('pages/register', {pageTitle: 'Register'});
+	res.render('pages/register', {...getModel(req), pageTitle: 'Register'});
 });
+app.get('/signout', (req, res)=> {
+	auth.signOut(req, res);
+	res.render('pages/index', {...getModel(req), pageTitle: 'Home'});
+});
+
 app.get('/forgotpassword', (req, res)=> {
-	res.render('pages/forgotpassword', {pageTitle: 'Forgot Password'});
+	res.render('pages/forgotpassword', {...getModel(req), pageTitle: 'Forgot Password'});
 });
+
+function getModel(req){
+	return {userName: req.session.userName}
+}
 
 // Start server
 const port = config.CONNECTION_PORT_DEBUG;
