@@ -2,16 +2,32 @@
 
 This is the sign in page.
 
+<% if(statusCode == 0) { %>
+	<!-- User hasn't tried to sign in yet -->
+<% } else if(statusCode == 1) { %>
+<div>
+	Invalid credentials
+</div>
+<% } else if(statusCode == 2) {
+	// Redirect using client-side. If you do a server-side redirect, the cookie won't be applied
+	// TODO: Look deeper into this to see if there is a better way.
+	%>
+	<script>document.location.href = '/';</script>
+<% } %>
+
 <form action="/signin" method="post">
 	<div class="form-container" >
 		<div>
-			<input type="text" placeholder="Username">
+			<input type="text" name="userName" placeholder="Username">
 		</div>
 		<div>
-			<input type="text" placeholder="Password">
+			<input type="text" name="password" type="password" placeholder="Password">
 		</div>
 		<div>
 			<input type="submit" value="Sign In" />
+		</div>
+		<div>
+			<a href="/forgotpassword">Forgot password?</a>
 		</div>
 	</div>
 </form>

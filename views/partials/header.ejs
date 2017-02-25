@@ -10,16 +10,14 @@
 	<header>
 		<ul role="nav" class="nav">
 			<li><a href="/">Home</a></li>
-			<li><a href="/signin">Sign In</a></li>
 			<li><a href="/register">Register</a></li>
-			<li><a href="/forgotpassword">Forgot Password</a></li>
+			<% if(userName){ %>
+				<li><a href="/signout">Sign Out (<%= userName %>)</a></li>
+			<% } else { %>
+				<li><a href="/signin">Sign In</a></li>
+			<% } %>
 		</ul>
-		<% if(userName){ %>
-		<ul class="nav">
-			<li><%= userName %></li>
-			<li><a href="/signout">Sign Out</a></li>
-		</ul>
-		<% } %>
+		<hr>
 	</header>
 	
 	<main>

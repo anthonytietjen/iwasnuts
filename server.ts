@@ -42,14 +42,12 @@ app.get('/', (req, res)=> {
 	res.render('pages/index', {...getModel(req), pageTitle: 'Home'});
 });
 app.get('/signin', (req, res)=> {
-	res.render('pages/signin', {...getModel(req), pageTitle: 'Sign In'});
+	res.render('pages/signin', {...getModel(req), pageTitle: 'Sign In', statusCode: auth.enSigninStatusCode.NONE });
 });
 app.post('/signin', (req, res) => {
-	if(auth.signIn(req)){
-		res.render('pages/index', {...getModel(req), pageTitle: 'Home'});
-	} else {
-		res.render('pages/signin', {...getModel(req), message: 'Invalid credentials'});
-	}
+	auth.signIn(req, (statusCode: auth.enSigninStatusCode) => {
+		res.render('pages/signin', {...getModel(req), pageTitle: 'Sign In', statusCode });
+	});
 });
 app.get('/register', (req, res)=> {
 	res.render('pages/register', {...getModel(req), pageTitle: 'Register'});
