@@ -8,6 +8,6 @@
         "**/*.map": { "when": "$(basename)" },
         "**/*.js": { "when": "$(basename).ts" }
     },
-    "tslint.enable": true,
-    "sasslint.enable": true
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.referencesCodeLens.enabled": true
 }

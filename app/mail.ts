@@ -1,0 +1,1 @@
+import * as mailer from "node-mailer";
