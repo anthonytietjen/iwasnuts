@@ -49,4 +49,4 @@ Recommended Extensions for Visual Studio Code
 
 Resources
 -----------
-My website: [anthonytietjen.blogspot.com](anthonytietjen.blogspot.com)
+My website: [anthonytietjen.blogspot.com](http://anthonytietjen.blogspot.com)
