@@ -40,6 +40,8 @@ Final Steps
 2. Configure your project-specific settings in /app/config.ts
 3. Place your Google (or other) anlytics scripts in /views/partials/analytics.ejs
 4. Press CTRL+SHIFT+B to launch the build task for compiling TypeScript and Sass. (Make sure to do this every time you open the project.)
+5. Press F5 to start the project in Node
+6. Open your browser to 127.0.0.1:3000 (This assumes you are using the default config settings)
 
 Recommended Extensions for Visual Studio Code
 -----------

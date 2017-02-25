@@ -1,4 +1,20 @@
-$body-bg: #bbb;
+$body-bg: #fff;
+$nav-link-color: #0000ff;
+
 body {
     background-color: $body-bg;
+	font-family: arial;
+	font-size:14pt;
+}
+
+ul.nav {
+	padding:0;
+	li {
+		display:inline;
+		margin-right: 20px;
+
+		a {
+			color: $nav-link-color;
+		}
+	}
 }

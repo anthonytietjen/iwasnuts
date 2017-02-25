@@ -27,6 +27,8 @@ app.use(session({
 		expires: false,
 		secure: "auto", // Uses false on http and true on https connections
 	},
+	resave: true, // https://github.com/expressjs/session#resave
+	saveUninitialized: false, // https://github.com/expressjs/session#saveuninitialized
 	secret: config.SESSION_SECRET
 }));
 
@@ -34,8 +36,17 @@ app.use(session({
 app.use(bodyParser.json({limit: '50mb'}));
 
 // Routes
-app.get('/', (req, res)=>{
-	res.render('pages/index', {pageTitle: 'Welome'});
+app.get('/', (req, res)=> {
+	res.render('pages/index', {pageTitle: 'Home'});
+});
+app.get('/signin', (req, res)=> {
+	res.render('pages/signin', {pageTitle: 'Sign In'});
+});
+app.get('/register', (req, res)=> {
+	res.render('pages/register', {pageTitle: 'Register'});
+});
+app.get('/forgotpassword', (req, res)=> {
+	res.render('pages/forgotpassword', {pageTitle: 'Forgot Password'});
 });
 
 // Start server
