@@ -12,4 +12,5 @@ app/**/*.js.map
 *.css.map
 
 # gulp-tsc temporary files
-gulp-tsc-tmp-*
+.tmp/
+.gulp-tsc-tmp-*
