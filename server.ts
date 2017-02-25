@@ -6,6 +6,8 @@ import * as sessionFileStore from "session-file-store";
 import config = require("./app/config");
 
 const app = express();
+app.use(express.static('./static'));
+app.set('view engine', 'ejs');
 
 // Global error handling
 app.use((err, req, res, next) => {
@@ -30,6 +32,12 @@ app.use(session({
 // Ability to parse json requests
 app.use(bodyParser.json({limit: '50mb'}));
 
+// Routes
+app.get('/', (req, res)=>{
+	res.render('pages/index', {pageTitle: 'Welome'});
+});
+
+// Start server
 const port = config.CONNECTION_PORT_DEBUG;
 const hostName = config.CONNECTION_HOSTNAME_DEBUG;
 app.listen(port, hostName, () => {
