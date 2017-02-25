@@ -17,17 +17,14 @@ Guide for Advanced Users of Node and VSCode
 
 Guide for Newcomers to Node and VSCode
 -----------
-1. Install [NodeJS](http://www.nodejs.org);
-2. Install [Visual Studio Code](http://code.visualstudio.com/)
+1. Install [NodeJS](http://www.nodejs.org)
+2. Install [Visual Studio Code](http://code.visualstudio.com)
 3. Install [Git](https://git-scm.com/downloads)
 4. At the command prompt, run: **npm install**
 5. At the command prompt, run: **npm install gulp -g**
 6. Create a new folder to hold your project
 7. In the command prompt, cd into the project folder
 8. In the command prompt, run: **git clone https://github.com/anthony-tietjen/iwasnuts.git**
-9. Open the project folder in VSCode
-10. Configure your settings in /app/config.ts
-11. Place your anlytics scripts in /views/partials/analytics.ejs
 
 Final Steps
 -----------
@@ -39,5 +36,5 @@ Final Steps
 Recommended Extensions for Visual Studio Code
 -----------
 1. **.ejs** - For better editor support when modifying .ejs files
-2. **TSLint* - For keeping in line with standard TypeScript coding practices.
-2. **Sass Lint* - For keeping in line with standard TypeScript coding practices.
+2. **TSLint** - For keeping in line with standard TypeScript coding practices.
+2. **Sass Lint** - For keeping in line with standard TypeScript coding practices.
