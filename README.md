@@ -19,35 +19,36 @@ If you like where the project is headed, please star it on GitHub. Enjoy!
 Guide for Advanced Users of Node and VSCode
 -----------
 1. Install NodeJS and Visual Studio Code
-2. git clone https://github.com/anthony-tietjen/iwasnuts.git
-3. npm install
-4. npm install gulp -g
+1. git clone https://github.com/anthony-tietjen/iwasnuts.git
+1. npm install
+1. npm install gulp -g
 
 Guide for Newcomers to Node and VSCode
 -----------
 1. Install [NodeJS](http://www.nodejs.org)
-2. Install [Visual Studio Code](http://code.visualstudio.com)
-3. Install [Git](https://git-scm.com/downloads)
-4. At the command prompt, run: **npm install**
-5. At the command prompt, run: **npm install gulp -g**
-6. Create a new folder to hold your project
-7. In the command prompt, cd into the project folder
-8. In the command prompt, run: **git clone https://github.com/anthony-tietjen/iwasnuts.git**
+1. Install [Visual Studio Code](http://code.visualstudio.com)
+1. Install [Git](https://git-scm.com/downloads)
+1. In the command prompt, cd into the project folder
+1. In the command prompt, run: **git clone https://github.com/anthony-tietjen/iwasnuts.git**
+1. At the command prompt, run: **npm install**
+1. At the command prompt, run: **npm install gulp -g**
+1. Create a new folder to hold your project
+
 
 Final Steps
 -----------
 1. Open the project folder in Visual Studio Code.
-2. Configure your project-specific settings in /app/config.ts
-3. Place your Google (or other) anlytics scripts in /views/partials/analytics.ejs
-4. Press CTRL+SHIFT+B to launch the build task for compiling TypeScript and Sass. (Make sure to do this every time you open the project.)
-5. Press F5 to start the project in Node
-6. Open your browser to 127.0.0.1:3000 (This assumes you are using the default config settings)
+1. Configure your project-specific settings in /app/config.ts
+1. Place your Google (or other) anlytics scripts in /views/partials/analytics.ejs
+1. Press CTRL+SHIFT+B to launch the build task for compiling TypeScript and Sass. (Make sure to do this every time you open the project.)
+1. Press F5 to start the project in Node
+1. Open your browser to 127.0.0.1:3000 (This assumes you are using the default config settings)
 
 Recommended Extensions for Visual Studio Code
 -----------
 1. **.ejs** - For better editor support when modifying .ejs files
-2. **TSLint** - For keeping in line with standard TypeScript coding practices.
-2. **Sass Lint** - For keeping in line with standard TypeScript coding practices.
+1. **TSLint** - For keeping in line with standard TypeScript coding practices.
+1. **Sass Lint** - For keeping in line with standard TypeScript coding practices.
 
 Resources
 -----------
